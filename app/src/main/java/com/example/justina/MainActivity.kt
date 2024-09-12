@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             val password = passwordInput.text.toString()
             Log.i("Test Credentials", "Username : $username and Password : $password")
             if (username == "Justina" && password == "justina2024") {
-                val intent = Intent(this, MainActivity2::class.java)
+                val intent = Intent(this, NavigationActivity::class.java)
                 startActivity(intent)
             }
             else {

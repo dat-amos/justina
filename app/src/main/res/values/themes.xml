@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.Justina" parent="Base.Theme.Justina" />
+
+    <style name="Theme.Justina.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Justina.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Justina.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

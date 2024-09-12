@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Justina"
         tools:targetApi="31">
         <activity
+            android:name=".NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.Justina.NoActionBar" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
@@ -25,7 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
