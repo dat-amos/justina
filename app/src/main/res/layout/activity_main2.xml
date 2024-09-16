@@ -11,7 +11,9 @@
         android:id="@+id/imageRV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="4dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
         app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
         android:layout_centerInParent="true"/>
 
