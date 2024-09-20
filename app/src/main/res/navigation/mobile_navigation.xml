@@ -11,17 +11,17 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_gallery"
-        android:name="com.example.justina.ui.gallery.GalleryFragment"
+        android:name="com.example.justina.MainActivity2"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/activity_main2" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_slideshow"
-        android:name="com.example.justina.ui.slideshow.SlideshowFragment"
+        android:name="com.example.justina.SlideshowActivity"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/activity_slideshow" />
     <fragment
         android:id="@+id/nav_logout"
         android:name="com.example.justina.ui.logout.LogoutFragment"
@@ -29,7 +29,12 @@
         tools:layout="@layout/fragment_logout" />
     <activity
         android:id="@+id/nav_story"
-        android:name="com.example.justina.MainActivity2"
+        android:name="com.example.justina.StoryActivity"
         android:label="@string/menu_story"
-        tools:layout="@layout/activity_main2" />
+        tools:layout="@layout/activity_story" />
+    <activity
+        android:id="@+id/nav_contact"
+        android:name="com.example.justina.ContactActivity"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/activity_contact" />
 </navigation>
