@@ -1,6 +1,8 @@
 package com.example.justina
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,13 @@ class ContactActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_contact)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        var arrayAdapter : ArrayAdapter<*>
+        var words = arrayOf("Beautiful","Angel face","Caring","Determined","Lovely","Committed",
+            "Friendly","Intelligent","Useful","Worth living with","Unrivalled")
+
+        var wordsListView = findViewById<ListView>(R.id.desc_words)
+        arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,words)
+        wordsListView.adapter = arrayAdapter
     }
 }
