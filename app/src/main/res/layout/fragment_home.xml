@@ -1,22 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/just_background"
     tools:context=".ui.home.HomeFragment">
 
+
     <TextView
-        android:id="@+id/text_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="18dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:text="Welcome to My App, Here you will find more about me. Just use the navigation bar"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="18dp"
+        android:textStyle="italic"
+        android:text="Gallery: See my facebook pictures"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="18dp"
+        android:textStyle="italic"
+        android:text="Slideshow: Explore my inapp pictures"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="18dp"
+        android:textStyle="italic"
+        android:text="Story: Read special poems about me"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="18dp"
+        android:textStyle="italic"
+        android:text="Contact: Embrace my word self"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="18dp"
+        android:textStyle="italic"
+        android:text="Logout: Take a break for now"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
