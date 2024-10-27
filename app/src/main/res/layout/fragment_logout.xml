@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/just_background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -12,6 +13,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:padding="60dp"
         android:textSize="22sp"
         android:layout_margin="20dp"
